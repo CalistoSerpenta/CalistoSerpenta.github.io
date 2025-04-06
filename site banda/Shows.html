@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .shows-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr 2fr; /* Larguras das colunas */
+            gap: 10px;
+            padding: 20px;
+        }
+        .shows-grid div {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid rgb(160, 2, 160);
+        }
+        .header {
+            background-color: rgb(160, 2, 160);
+            font-weight: bold;
+        }
+        .shows-grid div:nth-child(4n+1):nth-child(even),
+        .shows-grid div:nth-child(4n+2):nth-child(even),
+        .shows-grid div:nth-child(4n+3):nth-child(even),
+        .shows-grid div:nth-child(4n+4):nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .shows-grid div:hover {
+            background-color: rgba(255, 0, 128, 0.2);
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; color: rgb(160, 2, 160); margin: 20px 0;">Próximos Shows</h1>
+    </header>
+    <div class="shows-grid">
+        <div class="header">Data</div>
+        <div class="header">Cidade</div>
+        <div class="header">Local</div>
+        <div class="header">Artista</div>
+        <div>10/04/2025</div>
+        <div>São Paulo</div>
+        <div>Allianz Parque</div>
+        <div>Gorillaz</div>
+
+        <div>15/04/2025</div>
+        <div>Rio de Janeiro</div>
+        <div>Jeunesse Arena</div>
+        <div>Gorillaz</div>
+
+        <div>20/04/2025</div>
+        <div>Belo Horizonte</div>
+        <div>Mineirão</div>
+        <div>Gorillaz</div>
+
+        <div>25/04/2025</div>
+        <div>Curitiba</div>
+        <div>Pedreira Paulo Leminski</div>
+        <div>Gorillaz</div>
+
+        <div>30/04/2025</div>
+        <div>Porto Alegre</div>
+        <div>Estádio Beira-Rio</div>
+        <div>Gorillaz</div>
+    </div>
+</body>
+</html>

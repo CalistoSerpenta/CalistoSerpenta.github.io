@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Álbuns</title>
+    <style>
+        body {
+            color: white;
+            background-color: black;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .album {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .album img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .album:hover {
+            transform: translateY(-5px);
+        }
+        .album:hover p {
+            color: rgb(160, 2, 160);
+        }
+        .album p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(160, 2, 160);
+            margin-bottom: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+        ol > li {
+            color: rgb(160, 2, 160);
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-left: 4px solid rgb(160, 2, 160);
+            padding-left: 10px;
+        }
+
+        ul > li {
+            color: white;
+            margin-bottom: 5px;
+            transition: color 0.3s ease, border 0.3s ease;
+        }
+        ul > li:hover {
+            color: rgb(255, 0, 128);
+            border-left: 2px solid rgb(255, 0, 128);
+            padding-left: 8px;
+        }
+
+        ol > li:first-child {
+            color: rgb(255, 165, 0); /* Cor diferente para o primeiro gênero */
+        }
+        ol > li:last-child {
+            color: rgb(0, 191, 255); /* Cor diferente para o último gênero */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; color: rgb(160, 2, 160); margin: 20px 0;">Galeria de Álbuns - Gorillaz</h1>
+    </header>
+    <div class="gallery">
+        <div class="album">
+            <img src="./img/imagen1.jpeg" alt="Álbum Gorillaz 1">
+            <p>Álbum Gorillaz 1</p>
+        </div>
+        <div class="album">
+            <img src="./img/imagen2.jpeg" alt="Álbum Gorillaz 2">
+            <p>Álbum Gorillaz 2</p>
+        </div>
+        <div class="album">
+            <img src="./img/imagen3.jpeg" alt="Álbum Gorillaz 3">
+            <p>Álbum Gorillaz 3</p>
+        </div>
+        <div class="album">
+            <img src="./img/imagen4.jpeg" alt="Álbum Gorillaz 4">
+            <p>Álbum Gorillaz 4</p>
+        </div>
+        <div class="album">
+            <img src="./img/imagen5.jpeg" alt="Álbum Gorillaz 5">
+            <p>Álbum Gorillaz 5</p>
+        </div>
+        <div class="album">
+            <img src="./img/imagen6.jpeg" alt="Álbum Gorillaz 6">
+            <p>Álbum Gorillaz 6</p>
+        </div>
+        <div class="album">
+            <img src="./img/imagen7.jpeg" alt="Álbum Gorillaz 7">
+            <p>Álbum Gorillaz 7</p>
+        </div>
+        <div class="album">
+            <img src="./img/imagen8.jpeg" alt="Álbum Gorillaz 8">
+            <p>Álbum Gorillaz 8</p>
+        </div>
+    </div>
+    <h1>Gêneros Musicais e Artistas</h1>
+    <ol>
+        <li>Rock
+            <ul>
+                <li>Gorillaz</li>
+                <li>Foo Fighters</li>
+            </ul>
+        </li>
+        <li>Pop
+            <ul>
+                <li>Lady Gaga</li>
+                <li>Billie Eilish</li>
+            </ul>
+        </li>
+        <li>Hip-Hop
+            <ul>
+                <li>Kendrick Lamar</li>
+                <li>Drake</li>
+            </ul>
+        </li>
+        <li>Eletrônica
+            <ul>
+                <li>Daft Punk</li>
+                <li>Calvin Harris</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

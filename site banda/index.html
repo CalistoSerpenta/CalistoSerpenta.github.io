@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomWeb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            background-color: black;
+            font-family:'Roboto', sans-serif;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            padding: 16px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgb(160, 2, 160);
+            transition: 0.5s;
+        }
+        .center {
+            text-align: center;
+        }
+        header h1 {
+            text-align: center;
+            color: rgb(160, 2, 160);
+        }
+        .container {
+            padding: 0px 50px;
+            margin-bottom: 200px;
+        }
+        nav a:hover {
+            color: rgb(160, 2, 160);
+        }
+        .topmusicas1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 100px;
+        }
+        div ol li a {
+            text-align: center;
+            color: rgb(160, 2, 160);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .container a {
+            padding: 20px;
+        }
+        #ouvirAgora {
+            background-color: rgb(160, 2, 126); /* Cor de fundo personalizada */
+            font-size: 22px; /* Tamanho da fonte maior */
+            padding: 12px 25px; /* Padding confortável */
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+            margin-top: 20px; /* Espaçamento acima do botão */
+            width: 100%; /* Botão ocupa toda a largura em telas pequenas */
+            max-width: 300px; /* Limite de largura */
+        }
+
+        #ouvirAgora:hover {
+            background-color: rgb(255, 0, 128); /* Cor de fundo ao passar o mouse */
+            transform: scale(1.05); /* Leve aumento ao passar o mouse */
+        }
+
+        #ouvirAgora:active {
+            border: 2px solid rgb(160, 2, 160); /* Cor da borda ao clicar */
+            transform: scale(0.95); /* Leve redução ao clicar */
+        }
+
+        footer {
+            margin-top: 40px; /* Espaçamento acima do rodapé */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+            line-height: 1.6; /* Melhor espaçamento entre linhas */
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px; /* Reduzir o padding em telas menores */
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        caption {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: rgb(160, 2, 160);
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid rgb(160, 2, 160);
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: rgb(160, 2, 160);
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        tbody tr.highlight {
+            background-color: rgba(255, 0, 128, 0.2); /* Destaque para álbuns após 2015 */
+        }
+
+        tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Cor ao passar o mouse */
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="GênerosMusicais.html">Gêneros Musicais</a>
+                </li>
+                <li>
+                    <a href="Shows.html">Shows</a>
+                </li>
+                <li>
+                    <a href="Galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="Nosso estilo musical.html">Nosso Estilo Musical</a>
+                </li>
+            </ul>
+        </nav>
+       <header>
+        <h1>Gorillaz</h1>
+        <div class="center">
+            <img src="./img/imagen.webp"></img>
+       </header>
+        <main>
+            <section>
+                <h2>The Gorillaz</h2>
+                <p>Gorillaz é uma banda virtual britânica criada em 1998 pelo músico Damon Albarn e o artista Jamie Hewlett. A banda é composta por quatro membros fictícios: 2D, Murdoc Niccals, Noodle e Russel Hobbs. Eles são conhecidos por sua mistura de estilos musicais, incluindo rock, hip-hop e música eletrônica, além de suas animações e videoclipes inovadores.</p>
+                <p>O projeto Gorillaz é notável por sua abordagem única, combinando música com arte visual e narrativa. Os membros da banda são representados como personagens animados, e suas histórias são contadas através de videoclipes, álbuns e outros meios de comunicação. A banda ganhou reconhecimento mundial e se tornou um ícone da cultura pop contemporânea.</p>
+                <p>Gorillaz lançou vários álbuns de sucesso, incluindo "Gorillaz" (2001), "Demon Days" (2005) e "Plastic Beach" (2010). Eles são conhecidos por suas colaborações com uma variedade de artistas, abrangendo diferentes gêneros musicais. A banda continua a lançar novas músicas e a explorar novas direções criativas, mantendo sua base de fãs leal e expandindo seu alcance global.</p>
+            </section>
+            <table>
+                <caption>Tabela de Álbuns da Banda Gorillaz</caption>
+                <thead>
+                    <tr>
+                        <th>Nome do Artista</th>
+                        <th>Nome do Álbum</th>
+                        <th>Ano de Lançamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gorillaz</td>
+                        <td>Gorillaz</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>Gorillaz</td>
+                        <td>Demon Days</td>
+                        <td>2005</td>
+                    </tr>
+                    <tr>
+                        <td>Gorillaz</td>
+                        <td>Plastic Beach</td>
+                        <td>2010</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Gorillaz</td>
+                        <td>Humanz</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Gorillaz</td>
+                        <td>Song Machine, Season One</td>
+                        <td>2020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <div class="topmusicas1">
+         <div class="topmusicas2">
+        <h3>Top mais tocadas</h3>
+        <ol>
+            <li><a href="https://open.spotify.com/track/1RKUoGiLEbcXN4GY4spQDx?si=BSJSrmqTQQWPaG6n8lbH2A" target="_blank">Clint Eastwood</a></li>
+            <li><a href="https://open.spotify.com/track/0d28khcov6AiegSCpG5TuT?si=LlxuW0i0SB2ZXfCgLJIBqA" target="_blank">Feel Good Inc.</a></li>
+            <li><a href="https://open.spotify.com/track/0q6LuUqGLUiCPP1cbdwFs3?si=Utc6nR8pRjm1KihozrdMxg" target="_blank">On Melancholy Hill</a></li>
+         </div>   
+         <div class="topmusicas3">
+            <h3>Curiosidades sobre a banda</h3>
+            <ul>
+                <li>O nome "Gorillaz" foi inspirado em uma conversa entre Damon Albarn e Jamie Hewlett, onde eles discutiram a ideia de criar uma banda virtual.</li>
+                <li>Os personagens da banda têm histórias e personalidades distintas, e suas interações são frequentemente exploradas em videoclipes e materiais promocionais.</li>
+                <li>O primeiro álbum da banda, "Gorillaz", foi lançado em 2001 e apresentou uma mistura de estilos musicais, incluindo rock, hip-hop e música eletrônica.</li>
+            </ul>
+         </div>
+        </ol>
+        </div>
+        <button id="ouvirAgora" onclick="window.open('https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ?si=OyoL5oMKTFGf8WSABrajSw', '_blank')">Ouvir Agora</button>
+        <footer>
+            <p style="text-align: justify; margin-top: 20px;">&copy;Lucas G. Silva ; Ádrian</p>
+            <p style="text-align: justify;">&copy;Turma C.</p>
+        </footer>
+    </div>
+   
+</body>
+</html>
